@@ -5,4 +5,25 @@
    h2 {
       margin-bottom: .5rem;
    }
+   img {
+      width: 200px;
+   }
+   .buttons {
+      margin: 0.5rem;
+      button {
+         margin-right: 0.5rem;
+      }
+   }
+   .text {
+      font-size: 1.5rem;
+      &.red {
+         color:red;
+      }
+      &.blue {
+         color:blue;
+      }
+      &.green {
+         color:green;
+      }
+   }
 }

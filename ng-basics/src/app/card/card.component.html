@@ -4,17 +4,21 @@
       fontWeight: title.length < 7 ? 'bold' : 'normal'
    }">{{ title }}</h2>
    <p class="text" [ngClass]="{
-      
+      blue: textColor === 'blue',
+      green: textColor === 'green',
+      red: textColor === 'red'
    }">{{ text }}</p>
+
+   
    <div class="buttons">
       <button (click)="textColor = 'blue'">change blue</button>
       <button (click)="textColor = 'green'">change green</button>
       <button (click)="textColor = 'red'">change red</button>
    </div>
-   <strong>Number: {{ number }}</strong>
+   <!-- <strong>Number: {{ number }}</strong>
    <em>{{ array }}</em>
    <pre> {{ obj | json }}</pre>
-   <p>{{ getInfo() }}</p>
+   <p>{{ getInfo() }}</p> -->
    <div>
       <img [src]="imageUrl">
    </div>

@@ -25,15 +25,15 @@ import {Component, OnInit} from '@angular/core'
 export class CardComponent implements OnInit {
   title: string = 'Irina is the best'
   text: string = 'trying to study Angular'
-  number: number = 42
-  array: number[] = [1,2,3,4,5,6]
-  obj: object = {name: 'irina', 
-    info: {
-    age: 37,
-    job: 'frontend'
-  }
-  }
-  textColor = ''
+  // number: number = 42
+  // array: number[] = [1,2,3,4,5,6]
+  // obj: object = {name: 'irina', 
+  //   info: {
+  //   age: 37,
+  //   job: 'frontend'
+  // }
+  // }
+  textColor: string = ''
   imageUrl : string = 'https://loga-engineering.com/wp-content/uploads/2019/10/angular-logo.png'
   disabled = false
   ngOnInit() {

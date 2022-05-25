@@ -1,0 +1,23 @@
+<div>
+  <h1>{{ title }}</h1>
+</div>
+<div>
+  Name <input [(ngModel)]="name" type="text">
+  Age <input [(ngModel)]="age" type="number">
+  <button (click)="addUser()">Save</button>
+</div>
+
+<table>
+  <thead>
+     <tr>
+       <th>Name</th>
+       <th>Age</th>
+     </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of users">
+      <td>{{ item.name }}</td>
+      <td>{{ item.age }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {CardComponent } from './card/card.component';
 import { FormComponent } from './form/form.component';
+import { DateComponent } from './date/date.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    FormComponent
+    FormComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+   <label for="filters"> Sort by :
+      <select formControlName="state">
+        <option *ngFor="let filter of filters" [ngValue]="filter">
+          {{ filter.name }}
+        </option>
+      </select>
+   </label>
+</form>
